@@ -28,10 +28,10 @@ function checkNumVal(v, max) {
     v = v.replace(/\-/g, '');
     var v1 = parseInt(v);
     if (isNaN(v1)) {
-        return "1";
+        return "";
     }
     if (v1 <= 0) {
-        return "1";
+        return "";
     }
     return v;
 }
