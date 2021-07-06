@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>天井計算</title>
+    <link rel="shortcut icon" href="https://koyuisha.com/logo_icon.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://koyuisha.com/gacha/">
+    <meta property="og:title" content="心結文學社">
+    <meta property="og:description" content="天井計算">
+    <meta property="og:image" content="https://koyuisha.com/logo.png">
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="comment" class="comment">
+            <img class="logoimg" src="https://koyuisha.com/logo.png">
+            <div class="divCenter topDiv">
+                <p class="rwdtxt">1抽花費
+                    <input id="perOneInput" maxlength="8" type="number"
+                        oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
+                    顆石頭<br>
+                    達成天井需要
+                    <input id="gachaMaxInput" maxlength="4" type="number"
+                        oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
+                    抽<br>
+                    目前擁有
+                    <input id="nowhaveInput" maxlength="8" type="number"
+                        oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
+                    顆石頭
+                </p>
+                <button class="calcuButton" style="background-color: rgb(91, 152, 233);" onclick="showExample()">使用說明</button>
+                <button class="calcuButton" onclick="calculateGacha()">計算</button>
+            </div>
+            <div id="opt" class="divCenter rwdtxt optDiv">
+                每隔
+                <input maxlength="3" type="number" style="width: 80px;"
+                    oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
+                天，可獲得
+                <input maxlength="8" type="number"
+                    oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
+                顆石頭
+            </div>
+        </div>
+        <button class="addOptButton" onclick="addOption()">
+            增加條件
+        </button>
+    </div>
+</body>

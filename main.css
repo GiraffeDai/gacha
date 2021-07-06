@@ -1,0 +1,135 @@
+body {
+    background-color: white;
+}
+
+.logoimg {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.comment {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.commenter {
+    float: left;
+}
+
+input {
+    color: rgb(199, 35, 35);
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(220, 245, 237);
+    border: none;
+    font-size: 1.8rem;
+    outline: none;
+    text-decoration-color: white;
+    background-image: linear-gradient(rgb(148, 243, 255), rgb(80, 143, 238));
+    background-position: bottom -1px center;
+    background-size: calc(100% - 10px) 2px;
+    background-repeat: no-repeat;
+    border: 1px;
+}
+
+.divCenter {
+    text-align: center;
+}
+
+.topDiv{
+    border-color: rgb(76, 192, 238);
+    border-width: 3px;
+    border-style: solid;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.optDiv{
+    padding-top: 3px;
+    border-color: rgb(121, 205, 238);
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-style:double;
+}
+
+.swal-wide{
+    width:95% !important;
+    max-width: 1200PX !important;
+}
+
+.rwdtxt {
+    font-size: 2.0rem;
+}
+
+.addOptButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(55, 158, 55);
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.calcuButton{
+    margin-top: 5px;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(65, 110, 194);
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.removeButton{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: rgb(235, 63, 63);
+    color: white;
+    border-style: none;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .rwdtxt {
+        font-size: 2.5rem;
+    }
+    input {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rwdtxt {
+        font-size: 1.6rem;
+    }
+    input {
+        font-size: 1.8rem;
+    }
+}
