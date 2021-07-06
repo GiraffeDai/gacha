@@ -98,7 +98,7 @@ function calculateGacha() {
 function showExample(){
     Swal.fire({
         imageUrl: './example.png',
-        customClass: 'swal-wide',
+        customClass: 'swal-wide'
       })
 }
 
@@ -108,7 +108,10 @@ function showSuccessAlert(totalDayCount) {
     dateTime = new Date(dateTime);
     Swal.fire({
         icon: 'info',
-        text: "需耗時" + totalDayCount + "天\n預計於 " + dateTime.toLocaleDateString() + " 達成天井目標"
+        text: "需耗時" + totalDayCount + "天\n預計於 " + dateTime.toLocaleDateString() + " 達成天井目標",
+        html: '<h1>需耗時' + totalDayCount +
+        '天<br>預計於 ' + dateTime.toLocaleDateString() + ' 達成天井目標</h1>',
+        customClass: 'swal-wide'
     });
 }
 
