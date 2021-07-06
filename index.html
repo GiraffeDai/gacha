@@ -20,15 +20,15 @@
             <img class="logoimg" src="https://koyuisha.com/logo.png">
             <div class="divCenter topDiv">
                 <p class="rwdtxt">1抽花費
-                    <input id="perOneInput" maxlength="8" type="number"
+                    <input id="perOneInput" maxlength="8" type="numeric" pattern="\d*"
                         oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
                     顆石頭<br>
                     達成天井需要
-                    <input id="gachaMaxInput" maxlength="4" type="number"
+                    <input id="gachaMaxInput" maxlength="4" type="numeric" pattern="\d*"
                         oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
                     抽<br>
                     目前擁有
-                    <input id="nowhaveInput" maxlength="8" type="number"
+                    <input id="nowhaveInput" maxlength="8" type="numeric" pattern="\d*"
                         oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
                     顆石頭
                 </p>
@@ -37,10 +37,10 @@
             </div>
             <div id="opt" class="divCenter rwdtxt optDiv">
                 每隔
-                <input maxlength="3" type="number" style="width: 80px;"
+                <input maxlength="3" type="numeric" pattern="\d*" style="width: 80px;"
                     oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
                 天，可獲得
-                <input maxlength="8" type="number"
+                <input maxlength="8" type="numeric" pattern="\d*"
                     oninput="javascript: this.value = checkNumVal(this.value,this.maxLength)">
                 顆石頭
             </div>
