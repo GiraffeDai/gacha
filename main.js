@@ -21,7 +21,7 @@ function removeOption(element) {
     element.parentElement.remove();
 }
 
-function checkNumVal(v, max) {
+function checkNumVal(v, max, isCanEnterZero = false) {
     if (v.length > max) {
         v = v.slice(0, max);
     }
@@ -29,6 +29,9 @@ function checkNumVal(v, max) {
     var v1 = parseInt(v);
     if (isNaN(v1)) {
         return "";
+    }
+    if (v1 <= 0 & isCanEnterZero == true) {
+        return "0";
     }
     if (v1 <= 0) {
         return "";
@@ -95,11 +98,11 @@ function calculateGacha() {
     showSuccessAlert(totalDayCount);
 }
 
-function showExample(){
+function showExample() {
     Swal.fire({
         imageUrl: './example.png',
         customClass: 'swal-wide'
-      })
+    })
 }
 
 function showSuccessAlert(totalDayCount) {
@@ -110,7 +113,7 @@ function showSuccessAlert(totalDayCount) {
         icon: 'info',
         text: "需耗時" + totalDayCount + "天\n預計於 " + dateTime.toLocaleDateString() + " 達成天井目標",
         html: '<h1>需耗時' + totalDayCount +
-        '天<br>預計於 ' + dateTime.toLocaleDateString() + ' 達成天井目標</h1>',
+            '天<br>預計於 ' + dateTime.toLocaleDateString() + ' 達成天井目標</h1>',
         customClass: 'swal-wide'
     });
 }
